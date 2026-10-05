@@ -1,0 +1,96 @@
+.techSection {
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.introCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.techTag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-cyan);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+.subtext {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  line-height: 1.5;
+}
+
+.techPillGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.techPill {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all var(--transition-fast);
+}
+
+.techPill:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(79, 124, 255, 0.3);
+}
+
+.techDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-electric-blue);
+  box-shadow: 0 0 6px var(--color-electric-blue);
+}
+
+.techMeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.techName {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.techCategory {
+  font-size: 10px;
+  color: var(--text-dark-muted);
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .techPillGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

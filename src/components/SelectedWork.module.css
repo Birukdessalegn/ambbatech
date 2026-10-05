@@ -1,0 +1,274 @@
+.workSection {
+  background-color: var(--color-midnight);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.caseStudyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 50px;
+}
+
+.caseCard {
+  background: var(--color-navy-card);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: var(--shadow-card-dark);
+  transition: all var(--transition-smooth);
+}
+
+.caseGold {
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.caseGold:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+  transform: translateY(-4px);
+}
+
+.caseEmerald {
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.caseEmerald:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  transform: translateY(-4px);
+}
+
+.caseHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categoryPill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dark-secondary);
+}
+
+.caseGold .categoryPill {
+  color: var(--color-kasina-gold);
+}
+
+.caseEmerald .categoryPill {
+  color: var(--color-oak-emerald);
+}
+
+.featuredBadge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-full);
+  color: var(--text-dark-muted);
+}
+
+.caseTitle {
+  font-size: 26px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+.caseDesc {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.metricsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.metricBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metricVal {
+  font-size: 18px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.caseGold .metricVal {
+  color: var(--color-kasina-gold);
+}
+
+.caseEmerald .metricVal {
+  color: var(--color-oak-emerald);
+}
+
+.metricLbl {
+  font-size: 10px;
+  color: var(--text-dark-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tagWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.caseTag {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-dark-secondary);
+}
+
+.caseFooter {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.caseLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.caseGold .caseLink {
+  color: var(--color-kasina-gold);
+}
+
+.caseEmerald .caseLink {
+  color: var(--color-oak-emerald);
+}
+
+.caseLink:hover {
+  transform: translateX(4px);
+  color: #FFFFFF;
+}
+
+/* Secondary Projects */
+.secondarySection {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+}
+
+.secondaryHeader {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.secondaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.secondaryCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.secTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secTag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-bright-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.secIcon {
+  color: var(--text-dark-muted);
+}
+
+.secTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.secDesc {
+  font-size: 13px;
+  color: var(--text-dark-secondary);
+  line-height: 1.5;
+}
+
+.secLink {
+  margin-top: auto;
+  padding-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-bright-blue);
+}
+
+.secLink:hover {
+  color: #FFFFFF;
+  transform: translateX(3px);
+}
+
+@media (max-width: 960px) {
+  .caseStudyGrid {
+    grid-template-columns: 1fr;
+  }
+  .secondaryGrid {
+    grid-template-columns: 1fr;
+  }
+}

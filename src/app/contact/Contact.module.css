@@ -1,0 +1,226 @@
+.contactHero {
+  padding: 130px 0 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: clamp(34px, 4.5vw, 54px);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.blueText {
+  color: var(--color-bright-blue);
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.contactLayout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.infoCard {
+  background: var(--color-navy-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: var(--shadow-card-dark);
+}
+
+.cardHeader {
+  font-size: 22px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.cardDesc {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 10px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contactItem {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.iconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--color-blue-soft);
+  color: var(--color-bright-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contactItem strong {
+  display: block;
+  font-size: 12px;
+  color: var(--text-dark-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.contactItem span,
+.contactItem a {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.contactItem a:hover {
+  color: var(--color-bright-blue);
+}
+
+.workingHours {
+  font-size: 12px;
+  color: var(--text-dark-muted);
+  line-height: 1.6;
+}
+
+.workingHours strong {
+  color: var(--text-dark-primary);
+}
+
+.emergencySupport {
+  color: var(--color-kasina-gold);
+  font-weight: 600;
+}
+
+/* Form */
+.contactForm {
+  background: var(--color-navy-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-card-dark);
+}
+
+.formTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldFull {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.input, .select, .textarea {
+  background: rgba(11, 16, 32, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all var(--transition-fast);
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--color-electric-blue);
+  box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.2);
+}
+
+.select option {
+  background-color: var(--color-midnight);
+  color: #FFFFFF;
+}
+
+.successState {
+  background: var(--color-navy-card);
+  border: 1px solid var(--color-oak-emerald);
+  border-radius: var(--radius-xl);
+  padding: 50px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.successIcon {
+  color: var(--color-oak-emerald);
+}
+
+.successState h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.successState p {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+@media (max-width: 900px) {
+  .contactLayout {
+    grid-template-columns: 1fr;
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}

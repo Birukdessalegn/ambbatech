@@ -1,0 +1,119 @@
+.processSection {
+  padding: 80px 0 100px;
+  background-color: #070B16;
+  position: relative;
+}
+
+.sectionHeader {
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: clamp(32px, 3.6vw, 46px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #94A3B8;
+  line-height: 1.6;
+}
+
+/* Process Flow Track */
+.processTrackWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.trackLine {
+  position: absolute;
+  top: 35px;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(39, 211, 255, 0.1) 0%,
+    rgba(39, 211, 255, 0.35) 50%,
+    rgba(39, 211, 255, 0.1) 100%
+  );
+  z-index: 0;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.stepItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Icon Circle */
+.iconCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0D1629;
+  border: 1px solid rgba(39, 211, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(39, 211, 255, 0.12);
+  transition: all var(--transition-base);
+}
+
+.stepItem:hover .iconCircle {
+  border-color: #27D3FF;
+  box-shadow: 0 0 25px rgba(39, 211, 255, 0.35);
+  transform: translateY(-3px);
+  background: #11203D;
+}
+
+.stepIcon {
+  color: #27D3FF;
+}
+
+.stepTitle {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  margin-top: 4px;
+}
+
+.stepDescription {
+  font-size: 13px;
+  color: #94A3B8;
+  line-height: 1.5;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .trackLine {
+    display: none;
+  }
+  .stepsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 580px) {
+  .stepsGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

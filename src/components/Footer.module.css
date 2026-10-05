@@ -1,0 +1,189 @@
+.footer {
+  background-color: var(--color-midnight-depth);
+  color: var(--text-dark-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 80px 0 35px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.2fr 1.3fr;
+  gap: 50px;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  font-family: var(--font-family-heading);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.logoAccent {
+  color: var(--color-electric-blue);
+}
+
+.brandDescription {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.locationBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-bright-blue);
+  background: var(--color-blue-soft);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  width: fit-content;
+  border: 1px solid rgba(79, 124, 255, 0.2);
+}
+
+.locationIcon {
+  color: var(--color-electric-blue);
+}
+
+.linkCol {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.colTitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerLink {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.footerLink:hover {
+  color: #FFFFFF;
+  transform: translateX(3px);
+}
+
+.miniBadgeKasina {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--color-kasina-soft);
+  color: var(--color-kasina-gold);
+  font-weight: 600;
+}
+
+.miniBadgeOak {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--color-oak-soft);
+  color: var(--color-oak-emerald);
+  font-weight: 600;
+}
+
+.contactDetails {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-dark-secondary);
+}
+
+.contactItem:hover {
+  color: var(--color-bright-blue);
+}
+
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  color: var(--text-dark-muted);
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legalLink:hover {
+  color: var(--text-dark-primary);
+}
+
+.dotDivider {
+  color: var(--text-dark-muted);
+  opacity: 0.5;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+}

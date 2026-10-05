@@ -1,0 +1,116 @@
+.servicesSection {
+  padding: 80px 0 100px;
+  background-color: #070B16;
+  position: relative;
+}
+
+.sectionHeader {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: clamp(32px, 3.6vw, 46px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #94A3B8;
+  line-height: 1.6;
+}
+
+/* 4-Column Grid */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.serviceCard {
+  background: rgba(13, 21, 39, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+  position: relative;
+  text-decoration: none;
+}
+
+.serviceCard:hover {
+  background: rgba(17, 28, 54, 0.85);
+  border-color: rgba(39, 211, 255, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(39, 211, 255, 0.08);
+}
+
+.iconContainer {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(39, 211, 255, 0.1);
+  border: 1px solid rgba(39, 211, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  transition: transform var(--transition-fast);
+}
+
+.serviceCard:hover .iconContainer {
+  transform: scale(1.05);
+  background: rgba(39, 211, 255, 0.18);
+}
+
+.serviceIcon {
+  color: #27D3FF;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.cardDesc {
+  font-size: 13px;
+  color: #94A3B8;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.arrowLink {
+  color: #27D3FF;
+  display: flex;
+  align-items: center;
+  transition: transform var(--transition-fast);
+}
+
+.serviceCard:hover .arrowLink {
+  transform: translateX(5px);
+  color: #6D8DFF;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

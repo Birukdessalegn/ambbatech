@@ -1,0 +1,325 @@
+.heroSection {
+  padding: 130px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: clamp(36px, 4.8vw, 60px);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #6D8DFF 0%, #27D3FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+/* Story Section */
+.storySection {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.storyTextCol {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 15px;
+  color: var(--text-dark-secondary);
+  line-height: 1.7;
+}
+
+.storyTextCol strong {
+  color: #FFFFFF;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-cyan);
+}
+
+.sectionHeadline {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.locationCard {
+  background: var(--color-navy-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: var(--shadow-card-dark);
+}
+
+.locBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-bright-blue);
+  background: var(--color-blue-soft);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  width: fit-content;
+}
+
+.pinIcon {
+  color: var(--color-electric-blue);
+}
+
+.locTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.locDesc {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.locStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.statBox strong {
+  font-size: 24px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.statBox span {
+  font-size: 11px;
+  color: var(--text-dark-muted);
+}
+
+/* Beliefs Section */
+.beliefsSection {
+  background-color: var(--color-light-bg);
+  border-bottom: 1px solid var(--color-light-border);
+}
+
+.centerHeader {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.beliefTag {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-electric-blue);
+  letter-spacing: 0.08em;
+}
+
+.lightTitle {
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 800;
+  color: var(--text-light-primary);
+  letter-spacing: -0.03em;
+}
+
+.lightSub {
+  font-size: 16px;
+  color: var(--text-light-secondary);
+  line-height: 1.6;
+}
+
+.beliefsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.beliefCard {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 36px 30px;
+  border: 1px solid var(--color-light-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.beliefNum {
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-electric-blue);
+}
+
+.beliefTitle {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-light-primary);
+  line-height: 1.3;
+}
+
+.beliefDesc {
+  font-size: 14px;
+  color: var(--text-light-secondary);
+  line-height: 1.6;
+}
+
+/* Products Section */
+.productsSection {
+  background-color: var(--color-midnight);
+}
+
+.whiteTitle {
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+}
+
+.whiteSub {
+  font-size: 16px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.prodBox {
+  background: var(--color-navy-card);
+  border-radius: var(--radius-xl);
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-card-dark);
+}
+
+.prodKasina {
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.prodOak {
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.prodTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconGold {
+  color: var(--color-kasina-gold);
+}
+
+.iconEmerald {
+  color: var(--color-oak-emerald);
+}
+
+.prodType {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-dark-muted);
+}
+
+.prodTitle {
+  font-size: 26px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.prodDesc {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.goldLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-kasina-gold);
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.emeraldLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-oak-emerald);
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+@media (max-width: 960px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+  }
+  .beliefsGrid {
+    grid-template-columns: 1fr;
+  }
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+}

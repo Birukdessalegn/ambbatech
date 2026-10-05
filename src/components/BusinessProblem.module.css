@@ -1,0 +1,233 @@
+.problemSection {
+  background-color: var(--color-light-bg);
+  color: var(--text-light-primary);
+  border-bottom: 1px solid var(--color-light-border);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.tagline {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-electric-blue);
+}
+
+.title {
+  font-size: clamp(30px, 3.8vw, 44px);
+  font-weight: 800;
+  color: var(--text-light-primary);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: var(--text-light-secondary);
+  line-height: 1.6;
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.problemCard {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  border: 1px solid #F1F5F9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.solutionCard {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  border: 1px solid rgba(79, 124, 255, 0.25);
+  box-shadow: 0 8px 30px rgba(79, 124, 255, 0.08);
+}
+
+.cardHeaderProblem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-light-border);
+  margin-bottom: 24px;
+}
+
+.iconProblem {
+  color: #EF4444;
+  flex-shrink: 0;
+}
+
+.cardHeaderSolution {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(79, 124, 255, 0.2);
+  margin-bottom: 24px;
+}
+
+.iconSolution {
+  color: var(--color-electric-blue);
+  flex-shrink: 0;
+}
+
+.columnTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-light-primary);
+}
+
+.columnSub {
+  font-size: 13px;
+  color: var(--text-light-muted);
+}
+
+.columnSubSolution {
+  font-size: 13px;
+  color: var(--color-electric-blue);
+  font-weight: 600;
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stepItemProblem {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  background: #F8FAFC;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid #EF4444;
+}
+
+.stepItemSolution {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  background: rgba(79, 124, 255, 0.04);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-electric-blue);
+}
+
+.stepNumberProblem {
+  font-size: 12px;
+  font-weight: 700;
+  color: #EF4444;
+  background: rgba(239, 68, 68, 0.1);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepNumberSolution {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-electric-blue);
+  background: var(--color-blue-soft);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitleProblem {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 4px;
+}
+
+.stepTitleSolution {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-light-primary);
+  margin-bottom: 4px;
+}
+
+.stepDesc {
+  font-size: 13px;
+  color: var(--text-light-secondary);
+  line-height: 1.5;
+}
+
+.stepDescSolution {
+  font-size: 13px;
+  color: var(--text-light-secondary);
+  line-height: 1.5;
+}
+
+.connectorProblem {
+  position: absolute;
+  bottom: -14px;
+  left: 24px;
+  color: #CBD5E1;
+  z-index: 2;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.connectorSolution {
+  position: absolute;
+  bottom: -14px;
+  left: 24px;
+  color: var(--color-electric-blue);
+  z-index: 2;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.outcomeBanner {
+  background: #FFFFFF;
+  border: 1px solid var(--color-light-border);
+  border-radius: var(--radius-md);
+  padding: 18px 24px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.outcomeText {
+  font-size: 15px;
+  color: var(--text-light-secondary);
+}
+
+.outcomeText strong {
+  color: var(--color-electric-blue);
+}
+
+@media (max-width: 900px) {
+  .comparisonGrid {
+    grid-template-columns: 1fr;
+  }
+}

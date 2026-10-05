@@ -1,0 +1,118 @@
+.ctaSection {
+  padding: 50px 0 90px;
+  background-color: #070B16;
+  position: relative;
+}
+
+.ctaBanner {
+  background: linear-gradient(135deg, #0D1730 0%, #0F224D 50%, #091328 100%);
+  border: 1px solid rgba(79, 124, 255, 0.28);
+  border-radius: 18px;
+  padding: 36px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 40px rgba(79, 124, 255, 0.15);
+}
+
+/* Ambient Corner Lighting */
+.bannerGlow {
+  position: absolute;
+  top: -50%;
+  right: 15%;
+  width: 400px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(79, 124, 255, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(30px);
+}
+
+.bannerLeft {
+  max-width: 420px;
+  position: relative;
+  z-index: 1;
+}
+
+.headline {
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.subline {
+  font-size: 14px;
+  color: #94A3B8;
+  line-height: 1.5;
+}
+
+.bannerAction {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+/* Trust Badges */
+.trustBadges {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #CBD5E1;
+  white-space: nowrap;
+}
+
+.checkIcon {
+  color: #27D3FF;
+}
+
+.zapIcon {
+  color: #F59E0B;
+}
+
+.supportIcon {
+  color: #10B981;
+}
+
+/* Responsiveness */
+@media (max-width: 1100px) {
+  .ctaBanner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 28px;
+    gap: 24px;
+  }
+  .trustBadges {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 18px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .trustBadges {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

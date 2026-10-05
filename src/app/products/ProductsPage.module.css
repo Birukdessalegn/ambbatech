@@ -1,0 +1,204 @@
+.hero {
+  padding: 130px 0 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #6D8DFF 0%, #27D3FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 45px;
+}
+
+.card {
+  background: var(--color-navy-card);
+  border-radius: var(--radius-xl);
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: var(--shadow-card-dark);
+  transition: all var(--transition-smooth);
+}
+
+.cardKasina {
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.cardKasina:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+  transform: translateY(-4px);
+}
+
+.cardOak {
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.cardOak:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconGoldWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--color-kasina-soft);
+  color: var(--color-kasina-gold);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconEmeraldWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--color-oak-soft);
+  color: var(--color-oak-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeKasina {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-kasina-gold);
+  background: var(--color-kasina-soft);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.badgeOak {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-oak-emerald);
+  background: var(--color-oak-soft);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.cardTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.cardTagline {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark-secondary);
+  margin-top: -10px;
+}
+
+.cardDesc {
+  font-size: 14px;
+  color: var(--text-dark-secondary);
+  line-height: 1.6;
+}
+
+.featurePoints {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-dark-primary);
+}
+
+.goldCheck {
+  color: var(--color-kasina-gold);
+  flex-shrink: 0;
+}
+
+.emeraldCheck {
+  color: var(--color-oak-emerald);
+  flex-shrink: 0;
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: auto;
+  padding-top: 8px;
+  flex-wrap: wrap;
+}
+
+.futureStrip {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--text-dark-secondary);
+  line-height: 1.5;
+}
+
+.futureStrip strong {
+  color: #FFFFFF;
+}
+
+.shieldIcon {
+  color: var(--color-cyan);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
