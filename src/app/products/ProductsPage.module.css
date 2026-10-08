@@ -70,6 +70,24 @@
   transform: translateY(-4px);
 }
 
+.cardPharma {
+  border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+.cardPharma:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+  transform: translateY(-4px);
+}
+
+.cardStore {
+  border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+.cardStore:hover {
+  border-color: rgba(139, 92, 246, 0.5);
+  transform: translateY(-4px);
+}
+
 .cardHeader {
   display: flex;
   align-items: center;
@@ -100,6 +118,30 @@
   justify-content: center;
 }
 
+.iconCyanWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(6, 182, 212, 0.12);
+  color: #06B6D4;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconPurpleWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(139, 92, 246, 0.12);
+  color: #A78BFA;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .badgeKasina {
   font-size: 11px;
   font-weight: 700;
@@ -116,6 +158,26 @@
   text-transform: uppercase;
   color: var(--color-oak-emerald);
   background: var(--color-oak-soft);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.badgePharma {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #06B6D4;
+  background: rgba(6, 182, 212, 0.12);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.badgeStore {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #A78BFA;
+  background: rgba(139, 92, 246, 0.12);
   padding: 4px 10px;
   border-radius: var(--radius-full);
 }

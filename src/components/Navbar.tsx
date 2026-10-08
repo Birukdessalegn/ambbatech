@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Menu, X, ArrowRight, Hotel, Wine, Layers, Laptop, Smartphone, Cpu } from "lucide-react";
+import { ChevronDown, Menu, X, ArrowRight, Hotel, Wine, Pill, Store, Layers, Laptop, Smartphone, Cpu } from "lucide-react";
+import AmbbaLogo from "@/components/AmbbaLogo";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -34,11 +35,7 @@ export default function Navbar() {
         {/* Brand Logo */}
         <Link href="/" className={styles.logoLink}>
           <div className={styles.logoMark}>
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="8" fill="#151F38" />
-              <path d="M16 6L7 24H12.5L16 16.5L19.5 24H25L16 6Z" fill="#4F7CFF" />
-              <path d="M12 18H20L18.5 21H13.5L12 18Z" fill="#27D3FF" opacity="0.85" />
-            </svg>
+            <AmbbaLogo size={32} />
           </div>
           <span className={styles.logoText}>
             AMBBA<span className={styles.logoAccent}>TECH</span>
@@ -58,32 +55,64 @@ export default function Navbar() {
             </button>
 
             {productsOpen && (
-              <div className={styles.dropdownMenu}>
-                <Link href="/products/kasina-hms" className={styles.dropdownItem}>
-                  <div className={`${styles.itemIcon} ${styles.iconKasina}`}>
-                    <Hotel size={18} />
-                  </div>
-                  <div className={styles.itemContent}>
-                    <div className={styles.itemTitleRow}>
-                      <span className={styles.itemTitle}>Kasina HMS</span>
-                      <span className={styles.kasinaBadge}>Hospitality</span>
+              <div className={`${styles.dropdownMenu} ${styles.productsDropdownWide}`}>
+                <div className={styles.productsDropdownGrid}>
+                  {/* Product 1: Hotel Management */}
+                  <Link href="/products/hotel-management-system" className={styles.dropdownItem}>
+                    <div className={`${styles.itemIcon} ${styles.iconKasina}`}>
+                      <Hotel size={18} />
                     </div>
-                    <p className={styles.itemDesc}>Complete hotel operations, reservations & multi-department folios.</p>
-                  </div>
-                </Link>
+                    <div className={styles.itemContent}>
+                      <div className={styles.itemTitleRow}>
+                        <span className={styles.itemTitle}>Hotel Management System</span>
+                        <span className={styles.kasinaBadge}>Hospitality</span>
+                      </div>
+                      <p className={styles.itemDesc}>Front desk, housekeeping, room folios, dining POS & night audit.</p>
+                    </div>
+                  </Link>
 
-                <Link href="/products/the-oak-club" className={styles.dropdownItem}>
-                  <div className={`${styles.itemIcon} ${styles.iconOak}`}>
-                    <Wine size={18} />
-                  </div>
-                  <div className={styles.itemContent}>
-                    <div className={styles.itemTitleRow}>
-                      <span className={styles.itemTitle}>THE OAK CLUB</span>
-                      <span className={styles.oakBadge}>Venues & F&B</span>
+                  {/* Product 2: Club & Restaurant */}
+                  <Link href="/products/club-restaurant-management-system" className={styles.dropdownItem}>
+                    <div className={`${styles.itemIcon} ${styles.iconOak}`}>
+                      <Wine size={18} />
                     </div>
-                    <p className={styles.itemDesc}>Centralized platform for clubs, lounges, restaurants and bar management.</p>
-                  </div>
-                </Link>
+                    <div className={styles.itemContent}>
+                      <div className={styles.itemTitleRow}>
+                        <span className={styles.itemTitle}>Club & Restaurant System</span>
+                        <span className={styles.oakBadge}>F&B Venues</span>
+                      </div>
+                      <p className={styles.itemDesc}>Floor table mapping, fast handheld POS, kitchen routing & bar stock.</p>
+                    </div>
+                  </Link>
+
+                  {/* Product 3: Pharmaceutical Management */}
+                  <Link href="/products/pharmaceutical-management-system" className={styles.dropdownItem}>
+                    <div className={`${styles.itemIcon} ${styles.iconPharma}`}>
+                      <Pill size={18} />
+                    </div>
+                    <div className={styles.itemContent}>
+                      <div className={styles.itemTitleRow}>
+                        <span className={styles.itemTitle}>Pharmaceutical System</span>
+                        <span className={styles.pharmaBadge}>Healthcare</span>
+                      </div>
+                      <p className={styles.itemDesc}>Batch & expiry tracking, prescription dispensing & pharmacy POS.</p>
+                    </div>
+                  </Link>
+
+                  {/* Product 4: Store Management */}
+                  <Link href="/products/store-management-system" className={styles.dropdownItem}>
+                    <div className={`${styles.itemIcon} ${styles.iconStore}`}>
+                      <Store size={18} />
+                    </div>
+                    <div className={styles.itemContent}>
+                      <div className={styles.itemTitleRow}>
+                        <span className={styles.itemTitle}>Store Management System</span>
+                        <span className={styles.storeBadge}>Retail & Stores</span>
+                      </div>
+                      <p className={styles.itemDesc}>Multi-branch warehouse stock, barcode scanning & PO automation.</p>
+                    </div>
+                  </Link>
+                </div>
               </div>
             )}
           </div>
@@ -150,8 +179,8 @@ export default function Navbar() {
 
         {/* Action Button */}
         <div className={styles.actionContainer}>
-          <Link href="/request-demo" className="btn btn-primary btn-sm btn-pill">
-            Request a Demo <ArrowRight size={14} />
+          <Link href="/request-demo" className="btn btn-primary btn-sm">
+            Request Demo <ArrowRight size={15} />
           </Link>
 
           {/* Mobile Menu Button */}
@@ -169,19 +198,33 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className={styles.mobileDrawer}>
           <div className={styles.mobileNavSection}>
-            <span className={styles.mobileSectionHeader}>Products</span>
-            <Link href="/products/kasina-hms" className={styles.mobileNavLink}>
+            <span className={styles.mobileSectionHeader}>Our Products</span>
+            <Link href="/products/hotel-management-system" className={styles.mobileNavLink}>
               <Hotel size={18} className={styles.mobileKasinaIcon} />
               <div>
-                <strong>Kasina HMS</strong>
-                <span className={styles.mobileSubtext}>Hotel Management System</span>
+                <strong>Hotel Management System</strong>
+                <span className={styles.mobileSubtext}>Full Hospitality PMS</span>
               </div>
             </Link>
-            <Link href="/products/the-oak-club" className={styles.mobileNavLink}>
+            <Link href="/products/club-restaurant-management-system" className={styles.mobileNavLink}>
               <Wine size={18} className={styles.mobileOakIcon} />
               <div>
-                <strong>THE OAK CLUB</strong>
-                <span className={styles.mobileSubtext}>Club & Venue System</span>
+                <strong>Club & Restaurant System</strong>
+                <span className={styles.mobileSubtext}>Venues, Lounges & Bars</span>
+              </div>
+            </Link>
+            <Link href="/products/pharmaceutical-management-system" className={styles.mobileNavLink}>
+              <Pill size={18} className={styles.mobilePharmaIcon} />
+              <div>
+                <strong>Pharmaceutical System</strong>
+                <span className={styles.mobileSubtext}>Prescription & Pharmacy POS</span>
+              </div>
+            </Link>
+            <Link href="/products/store-management-system" className={styles.mobileNavLink}>
+              <Store size={18} className={styles.mobileStoreIcon} />
+              <div>
+                <strong>Store Management System</strong>
+                <span className={styles.mobileSubtext}>Warehouse, Stock & Retail POS</span>
               </div>
             </Link>
           </div>

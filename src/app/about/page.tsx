@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Hotel, Wine, ShieldCheck, MapPin, Target, Users, Zap, CheckCircle } from "lucide-react";
+import { ArrowRight, Hotel, Wine, Pill, Store, ShieldCheck, MapPin, Target, Users, Zap, CheckCircle } from "lucide-react";
 import styles from "./About.module.css";
 
 export const metadata: Metadata = {
@@ -74,8 +74,8 @@ export default function AboutPage() {
 
               <div className={styles.locStats}>
                 <div className={styles.statBox}>
-                  <strong>2+</strong>
-                  <span>Flagship Platforms</span>
+                  <strong>4</strong>
+                  <span>Core Systems</span>
                 </div>
                 <div className={styles.statBox}>
                   <strong>100%</strong>
@@ -114,43 +114,75 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Flagship Products Summary */}
+      {/* Commercial Systems Summary */}
       <section className={`section section-dark ${styles.productsSection}`}>
         <div className="container">
           <div className={styles.centerHeader}>
-            <div className="pill-badge pill-badge-blue">Commercial Portfolio</div>
+            <div className="pill-badge pill-badge-blue">Core Portfolio</div>
             <h2 className={styles.whiteTitle}>Our Commercial Platforms</h2>
             <p className={styles.whiteSub}>
-              AmbbaTech software is active every single day in live customer environments.
+              Deep vertical operational engines engineered for mission-critical reliability.
             </p>
           </div>
 
           <div className={styles.productsGrid}>
+            {/* 1. Hotel Management System */}
             <div className={`${styles.prodBox} ${styles.prodKasina}`}>
               <div className={styles.prodTop}>
                 <Hotel size={24} className={styles.iconGold} />
                 <span className={styles.prodType}>Hospitality Platform</span>
               </div>
-              <h3 className={styles.prodTitle}>Kasina HMS</h3>
+              <h3 className={styles.prodTitle}>Hotel Management System</h3>
               <p className={styles.prodDesc}>
-                Complete hotel management system integrating Front Desk, Reservations, Housekeeping, Restaurant POS, Folio Billing, and Night Audit.
+                Complete hotel operations platform integrating Front Desk, Reservations, Housekeeping, Restaurant POS, Folio Billing, and Night Audit.
               </p>
-              <Link href="/products/kasina-hms" className={styles.goldLink}>
-                Explore Kasina HMS <ArrowRight size={15} />
+              <Link href="/products/hotel-management-system" className={styles.goldLink}>
+                Explore Hotel System <ArrowRight size={15} />
               </Link>
             </div>
 
+            {/* 2. Club & Restaurant Management System */}
             <div className={`${styles.prodBox} ${styles.prodOak}`}>
               <div className={styles.prodTop}>
                 <Wine size={24} className={styles.iconEmerald} />
-                <span className={styles.prodType}>Venues & Nightlife</span>
+                <span className={styles.prodType}>Venues & Dining</span>
               </div>
-              <h3 className={styles.prodTitle}>THE OAK CLUB</h3>
+              <h3 className={styles.prodTitle}>Club &amp; Restaurant System</h3>
               <p className={styles.prodDesc}>
-                Operating system for clubs, bars, and restaurants featuring floor map table tracking, mobile ordering, instant KOT, and automatic stock depletion.
+                High-throughput operating system for clubs, bars, and restaurants featuring floor map table tracking, mobile ordering, instant KOT, and automatic stock depletion.
               </p>
-              <Link href="/products/the-oak-club" className={styles.emeraldLink}>
-                Explore THE OAK CLUB <ArrowRight size={15} />
+              <Link href="/products/club-restaurant-management-system" className={styles.emeraldLink}>
+                Explore Club &amp; Restaurant System <ArrowRight size={15} />
+              </Link>
+            </div>
+
+            {/* 3. Pharmaceutical Management System */}
+            <div className={`${styles.prodBox} ${styles.prodPharma}`}>
+              <div className={styles.prodTop}>
+                <Pill size={24} className={styles.iconCyan} />
+                <span className={styles.prodType}>Healthcare & Pharmacy</span>
+              </div>
+              <h3 className={styles.prodTitle}>Pharmaceutical System</h3>
+              <p className={styles.prodDesc}>
+                Precision software for community dispensaries and pharma wholesalers, managing batch expiries, prescription validation, and insurance billing.
+              </p>
+              <Link href="/products/pharmaceutical-management-system" className={styles.cyanLink}>
+                Explore Pharmacy System <ArrowRight size={15} />
+              </Link>
+            </div>
+
+            {/* 4. Store Management System */}
+            <div className={`${styles.prodBox} ${styles.prodStore}`}>
+              <div className={styles.prodTop}>
+                <Store size={24} className={styles.iconPurple} />
+                <span className={styles.prodType}>Retail & Warehouse</span>
+              </div>
+              <h3 className={styles.prodTitle}>Store Management System</h3>
+              <p className={styles.prodDesc}>
+                Multi-branch inventory and retail command center with barcode scanning, automated par-level restocking, and shrinkage prevention.
+              </p>
+              <Link href="/products/store-management-system" className={styles.purpleLink}>
+                Explore Store System <ArrowRight size={15} />
               </Link>
             </div>
           </div>

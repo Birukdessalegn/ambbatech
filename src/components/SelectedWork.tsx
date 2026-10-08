@@ -5,8 +5,8 @@ import styles from "./SelectedWork.module.css";
 export default function SelectedWork() {
   const projects = [
     {
-      id: "kasina-hms",
-      title: "Kasina Hotel Management System",
+      id: "hotel-management-system",
+      title: "Hotel Management System",
       clientType: "Hospitality • SaaS & Multi-Property",
       category: "Hotel PMS & Multi-Outlet F&B",
       desc: "Replaced 4 disparate legacy systems (front desk ledger, separate restaurant cash registers, manual housekeeping clipboards, and paper store requisitions) with one unified real-time cloud PMS.",
@@ -16,12 +16,12 @@ export default function SelectedWork() {
         { label: "Night Audit Duration", value: "12 mins" },
       ],
       tags: ["Hotel Management", "Front Desk", "Restaurant POS", "Housekeeping", "Auditing"],
-      link: "/products/kasina-hms",
+      link: "/products/hotel-management-system",
       accent: "gold",
     },
     {
-      id: "the-oak-club",
-      title: "THE OAK CLUB Central Management",
+      id: "club-restaurant-management-system",
+      title: "Club & Restaurant Management System",
       clientType: "Hospitality • Venues, Lounges & Nightlife",
       category: "Club POS & Beverage Inventory Intelligence",
       desc: "Architected a high-throughput venue operating platform managing table reservations, bottle service, dual-bar cashiers, and kitchen order routing with instant stock depletion.",
@@ -31,23 +31,25 @@ export default function SelectedWork() {
         { label: "Peak Hour Tab Handling", value: "400+ orders/hr" },
       ],
       tags: ["Club Management", "Table Mapping", "Kitchen Routing", "Beverage Control", "P&L Analytics"],
-      link: "/products/the-oak-club",
+      link: "/products/club-restaurant-management-system",
       accent: "emerald",
     },
   ];
 
   const smallerProjects = [
     {
-      title: "Enterprise Multi-Branch Supply Chain Portal",
-      category: "Custom Logistics & Procurement",
-      desc: "Automated replenishment workflows across 14 regional distribution warehouses with role-based sign-offs.",
-      tag: "Custom Enterprise",
+      title: "Pharmaceutical Management System",
+      category: "Healthcare & Dispensary POS",
+      desc: "Prescription verification, batch expiry tracking, and drug-interaction safety audits for pharmacy networks.",
+      tag: "Commercial System",
+      link: "/products/pharmaceutical-management-system",
     },
     {
-      title: "Mobile Field Audit & Quality Control System",
-      category: "Mobile Android / iOS System",
-      desc: "Offline-first inspection tablets for field operations with automated compliance report dispatch.",
-      tag: "Mobile App",
+      title: "Store & Inventory Management System",
+      category: "Retail & Multi-Branch Warehousing",
+      desc: "Automated replenishment workflows, barcode scanning, and multi-location retail stock transfer routing.",
+      tag: "Commercial System",
+      link: "/products/store-management-system",
     },
   ];
 
@@ -120,8 +122,8 @@ export default function SelectedWork() {
                 </div>
                 <h5 className={styles.secTitle}>{sp.title}</h5>
                 <p className={styles.secDesc}>{sp.desc}</p>
-                <Link href="/solutions/custom-software" className={styles.secLink}>
-                  <span>View Solution Scope</span> <ArrowRight size={13} />
+                <Link href={sp.link || "/solutions/custom-software"} className={styles.secLink}>
+                  <span>Explore System Platform</span> <ArrowRight size={13} />
                 </Link>
               </div>
             ))}

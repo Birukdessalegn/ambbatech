@@ -2,36 +2,64 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Hotel, Wine, Pill, Store } from "lucide-react";
 import styles from "./ProductProof.module.css";
 
 export default function ProductProof() {
-  const kasinaCol1 = [
+  const hotelCol1 = [
     "Front Desk & Reservations",
-    "Housekeeping",
-    "POS & Restaurant",
-    "Inventory & Purchasing",
+    "Housekeeping & Turnaround",
+    "Dining POS & Room Folios",
+    "Central Inventory & Purchasing",
   ];
 
-  const kasinaCol2 = [
-    "Finance & Accounting",
-    "HR & Payroll",
-    "Reports & Analytics",
-    "RBAC & Security",
+  const hotelCol2 = [
+    "Night Audit & Revenue P&L",
+    "Guest Billing & Invoicing",
+    "Staff Shifts & Attendance",
+    "Role-Based Security (RBAC)",
   ];
 
-  const oakCol1 = [
-    "POS & Orders",
-    "Tables & Waiters",
-    "Kitchen & Bar",
-    "Inventory",
+  const clubCol1 = [
+    "High-Speed Handheld POS",
+    "Live Floor & Table Map",
+    "Kitchen & Bar KOT Routing",
+    "Beverage & Bar Inventory",
   ];
 
-  const oakCol2 = [
-    "Purchasing & Finance",
-    "HR & Staff Management",
-    "Reports & Analytics",
-    "RBAC & Security",
+  const clubCol2 = [
+    "Automated Stock Depletion",
+    "Cashier Shift Balancing",
+    "Item Margin & Sales Reports",
+    "Role-Based Security (RBAC)",
+  ];
+
+  const pharmaCol1 = [
+    "Drug Batch & Expiry Tracking",
+    "Prescription Dispensing Log",
+    "Fast Over-The-Counter POS",
+    "Regulated Medicine Audit",
+  ];
+
+  const pharmaCol2 = [
+    "Wholesale Supplier Re-orders",
+    "Generic Alternative Prompts",
+    "Insurance & Copay Billing",
+    "Shortage & Expiry Alerts",
+  ];
+
+  const storeCol1 = [
+    "Multi-Branch Warehouse Stock",
+    "Barcode & SKU Fast Scanning",
+    "Automated Re-order Par Levels",
+    "Supplier PO & GRN Inbound",
+  ];
+
+  const storeCol2 = [
+    "Inter-Store Stock Transfers",
+    "Shrinkage & Audit Controls",
+    "Daily Margin & P&L Telemetry",
+    "Cashier Till Reconciliation",
   ];
 
   return (
@@ -39,42 +67,38 @@ export default function ProductProof() {
       <div className="container">
         {/* Left-Aligned Header */}
         <div className={styles.sectionHeader} data-reveal>
-          <div className="section-eyebrow">OUR FLAGSHIP PRODUCTS</div>
+          <div className="section-eyebrow">OUR CORE SOFTWARE SYSTEMS</div>
           <h2 className={styles.title}>
-            Powerful systems for <br />
+            Engineered systems for <br />
             modern businesses.
           </h2>
           <p className={styles.subtitle}>
-            Two integrated platforms, built for the unique needs of the hospitality and entertainment industries.
+            Four specialized, enterprise-grade platforms built around the operational reality of hospitality, nightlife, pharmaceuticals, and retail store logistics.
           </p>
         </div>
 
-        {/* 2 Flagship Cards Side-by-Side */}
+        {/* 4 Systems Grid (2x2) */}
         <div className={styles.cardsGrid}>
-          {/* Card 1: Kasina HMS */}
+          {/* Card 1: Hotel Management System */}
           <div className={`${styles.flagshipCard} ${styles.kasinaCard}`} data-reveal data-reveal-delay="1">
             <div className={styles.cardContent}>
-              {/* Product Header */}
               <div className={styles.cardHeader}>
                 <div className={styles.iconKasina}>
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2.2">
-                    <path d="M12 2L15 8L21 9L17 14L18 20L12 17L6 20L7 14L3 9L9 8L12 2Z" />
-                  </svg>
+                  <Hotel size={22} color="#F59E0B" />
                 </div>
                 <div>
-                  <h3 className={styles.productName}>KASINA</h3>
-                  <span className={styles.productTypeKasina}>Hotel Management System</span>
+                  <h3 className={styles.productName}>HOTEL</h3>
+                  <span className={styles.productTypeKasina}>Management System</span>
                 </div>
               </div>
 
               <p className={styles.productTagline}>
-                Complete hotel operations, from front desk to finance.
+                Complete hotel operations, from front desk check-in to automated night audit.
               </p>
 
-              {/* 2-Column Features */}
               <div className={styles.featureCols}>
                 <ul className={styles.featureList}>
-                  {kasinaCol1.map((item) => (
+                  {hotelCol1.map((item) => (
                     <li key={item} className={styles.featureItem}>
                       <CheckCircle2 size={15} className={styles.checkKasina} />
                       <span>{item}</span>
@@ -82,7 +106,7 @@ export default function ProductProof() {
                   ))}
                 </ul>
                 <ul className={styles.featureList}>
-                  {kasinaCol2.map((item) => (
+                  {hotelCol2.map((item) => (
                     <li key={item} className={styles.featureItem}>
                       <CheckCircle2 size={15} className={styles.checkKasina} />
                       <span>{item}</span>
@@ -91,61 +115,54 @@ export default function ProductProof() {
                 </ul>
               </div>
 
-              {/* Learn More Link */}
-              <Link href="/products/kasina-hms" className={styles.learnMoreKasina}>
+              <Link href="/products/hotel-management-system" className={styles.learnMoreKasina}>
                 Learn more <ArrowRight size={15} />
               </Link>
             </div>
 
-            {/* Embedded Mini Dashboard Preview */}
+            {/* Embedded Mini Preview */}
             <div className={styles.previewWindowKasina}>
               <div className={styles.previewTopBar}>
-                <span className={styles.previewTitle}>Kasina PMS</span>
+                <span className={styles.previewTitle}>Hotel PMS</span>
                 <div className={styles.miniDots}>
-                  <span />
-                  <span />
-                  <span />
+                  <span /><span /><span />
                 </div>
               </div>
               <div className={styles.previewImageContainer}>
                 <Image
                   src="/images/kasina-preview.jpg"
-                  alt="Kasina PMS Dashboard"
+                  alt="Hotel Management Dashboard"
                   fill
                   className={styles.previewImg}
                 />
                 <div className={styles.previewOverlayKasina}>
-                  <div className={styles.overlayTag}>Live System</div>
-                  <div className={styles.overlayMetric}>94 Occupied</div>
+                  <div className={styles.overlayTag}>PMS Active</div>
+                  <div className={styles.overlayMetric}>94 Occupied • 128 Rooms</div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Card 2: THE OAK CLUB */}
+          {/* Card 2: Club & Restaurant Management System */}
           <div className={`${styles.flagshipCard} ${styles.oakCard}`} data-reveal data-reveal-delay="2">
             <div className={styles.cardContent}>
-              {/* Product Header */}
               <div className={styles.cardHeader}>
                 <div className={styles.iconOak}>
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth="2.2">
-                    <path d="M12 3a7 7 0 0 0-7 7c0 4 7 11 7 11s7-7 7-11a7 7 0 0 0-7-7z" />
-                  </svg>
+                  <Wine size={22} color="#10B981" />
                 </div>
                 <div>
-                  <h3 className={styles.productName}>THE OAK CLUB</h3>
-                  <span className={styles.productTypeOak}>Club Management System</span>
+                  <h3 className={styles.productName}>CLUB &amp; RESTAURANT</h3>
+                  <span className={styles.productTypeOak}>Management System</span>
                 </div>
               </div>
 
               <p className={styles.productTagline}>
-                Manage your club, restaurant and bar from one place.
+                High-volume floor POS, mobile waitstaff ordering, kitchen routing &amp; bar control.
               </p>
 
-              {/* 2-Column Features */}
               <div className={styles.featureCols}>
                 <ul className={styles.featureList}>
-                  {oakCol1.map((item) => (
+                  {clubCol1.map((item) => (
                     <li key={item} className={styles.featureItem}>
                       <CheckCircle2 size={15} className={styles.checkOak} />
                       <span>{item}</span>
@@ -153,7 +170,7 @@ export default function ProductProof() {
                   ))}
                 </ul>
                 <ul className={styles.featureList}>
-                  {oakCol2.map((item) => (
+                  {clubCol2.map((item) => (
                     <li key={item} className={styles.featureItem}>
                       <CheckCircle2 size={15} className={styles.checkOak} />
                       <span>{item}</span>
@@ -162,32 +179,195 @@ export default function ProductProof() {
                 </ul>
               </div>
 
-              {/* Learn More Link */}
-              <Link href="/products/the-oak-club" className={styles.learnMoreOak}>
+              <Link href="/products/club-restaurant-management-system" className={styles.learnMoreOak}>
                 Learn more <ArrowRight size={15} />
               </Link>
             </div>
 
-            {/* Embedded Mini Dashboard Preview */}
+            {/* Embedded Mini Preview */}
             <div className={styles.previewWindowOak}>
               <div className={styles.previewTopBar}>
-                <span className={styles.previewTitle}>The Oak Club POS</span>
+                <span className={styles.previewTitle}>Venue &amp; F&amp;B POS</span>
                 <div className={styles.miniDots}>
-                  <span />
-                  <span />
-                  <span />
+                  <span /><span /><span />
                 </div>
               </div>
               <div className={styles.previewImageContainer}>
                 <Image
                   src="/images/oak-preview.jpg"
-                  alt="The Oak Club POS Dashboard"
+                  alt="Club & Restaurant POS Dashboard"
                   fill
                   className={styles.previewImg}
                 />
                 <div className={styles.previewOverlayOak}>
                   <div className={styles.overlayTagOak}>Venue Active</div>
-                  <div className={styles.overlayMetric}>38 Tables Open</div>
+                  <div className={styles.overlayMetric}>38 Tables Open • Fast KOT</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3: Pharmaceutical Management System */}
+          <div className={`${styles.flagshipCard} ${styles.pharmaCard}`} data-reveal data-reveal-delay="3">
+            <div className={styles.cardContent}>
+              <div className={styles.cardHeader}>
+                <div className={styles.iconPharma}>
+                  <Pill size={22} color="#06B6D4" />
+                </div>
+                <div>
+                  <h3 className={styles.productName}>PHARMACEUTICAL</h3>
+                  <span className={styles.productTypePharma}>Management System</span>
+                </div>
+              </div>
+
+              <p className={styles.productTagline}>
+                Complete dispensary operations, drug batch control, and regulatory compliance.
+              </p>
+
+              <div className={styles.featureCols}>
+                <ul className={styles.featureList}>
+                  {pharmaCol1.map((item) => (
+                    <li key={item} className={styles.featureItem}>
+                      <CheckCircle2 size={15} className={styles.checkPharma} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <ul className={styles.featureList}>
+                  {pharmaCol2.map((item) => (
+                    <li key={item} className={styles.featureItem}>
+                      <CheckCircle2 size={15} className={styles.checkPharma} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <Link href="/products/pharmaceutical-management-system" className={styles.learnMorePharma}>
+                Learn more <ArrowRight size={15} />
+              </Link>
+            </div>
+
+            {/* Mini Simulated Pharma Dashboard View */}
+            <div className={styles.previewWindowPharma}>
+              <div className={styles.previewTopBar}>
+                <span className={styles.previewTitlePharma}>Pharmacy &amp; Rx Core</span>
+                <div className={styles.miniDots}>
+                  <span /><span /><span />
+                </div>
+              </div>
+              <div className={styles.simulatedPharmaBody}>
+                <div className={styles.simStatRow}>
+                  <div className={styles.simStatItem}>
+                    <span className={styles.simStatLbl}>Rx Filled Today</span>
+                    <strong className={styles.simStatValCyan}>142</strong>
+                  </div>
+                  <div className={styles.simStatItem}>
+                    <span className={styles.simStatLbl}>Near Expiry Alert</span>
+                    <strong className={styles.simStatValWarn}>0 Shortages</strong>
+                  </div>
+                </div>
+                <div className={styles.simListPharma}>
+                  <div className={styles.simListItem}>
+                    <div>
+                      <div className={styles.simDrugName}>Amoxicillin 500mg</div>
+                      <div className={styles.simDrugSub}>Batch #B-914 • Exp 11/2028</div>
+                    </div>
+                    <span className={styles.simBadgeGreen}>Verified</span>
+                  </div>
+                  <div className={styles.simListItem}>
+                    <div>
+                      <div className={styles.simDrugName}>Metformin 850mg</div>
+                      <div className={styles.simDrugSub}>Batch #B-883 • Stock: 420 pk</div>
+                    </div>
+                    <span className={styles.simBadgeGreen}>Dispensed</span>
+                  </div>
+                </div>
+                <div className={styles.previewOverlayPharma}>
+                  <div className={styles.overlayTagPharma}>FDA &amp; Rx Compliant</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 4: Store Management System */}
+          <div className={`${styles.flagshipCard} ${styles.storeCard}`} data-reveal data-reveal-delay="4">
+            <div className={styles.cardContent}>
+              <div className={styles.cardHeader}>
+                <div className={styles.iconStore}>
+                  <Store size={22} color="#A78BFA" />
+                </div>
+                <div>
+                  <h3 className={styles.productName}>STORE &amp; INVENTORY</h3>
+                  <span className={styles.productTypeStore}>Management System</span>
+                </div>
+              </div>
+
+              <p className={styles.productTagline}>
+                Multi-branch inventory control, barcode logistics, and supplier purchasing automation.
+              </p>
+
+              <div className={styles.featureCols}>
+                <ul className={styles.featureList}>
+                  {storeCol1.map((item) => (
+                    <li key={item} className={styles.featureItem}>
+                      <CheckCircle2 size={15} className={styles.checkStore} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <ul className={styles.featureList}>
+                  {storeCol2.map((item) => (
+                    <li key={item} className={styles.featureItem}>
+                      <CheckCircle2 size={15} className={styles.checkStore} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <Link href="/products/store-management-system" className={styles.learnMoreStore}>
+                Learn more <ArrowRight size={15} />
+              </Link>
+            </div>
+
+            {/* Mini Simulated Store Dashboard View */}
+            <div className={styles.previewWindowStore}>
+              <div className={styles.previewTopBar}>
+                <span className={styles.previewTitleStore}>Store Warehouse Matrix</span>
+                <div className={styles.miniDots}>
+                  <span /><span /><span />
+                </div>
+              </div>
+              <div className={styles.simulatedStoreBody}>
+                <div className={styles.simStatRow}>
+                  <div className={styles.simStatItem}>
+                    <span className={styles.simStatLbl}>SKUs Monitored</span>
+                    <strong className={styles.simStatValPurple}>1,840</strong>
+                  </div>
+                  <div className={styles.simStatItem}>
+                    <span className={styles.simStatLbl}>Branches Synced</span>
+                    <strong className={styles.simStatValPurple}>4 Stores</strong>
+                  </div>
+                </div>
+                <div className={styles.simListPharma}>
+                  <div className={styles.simListItem}>
+                    <div>
+                      <div className={styles.simDrugName}>Central Warehouse (HQ)</div>
+                      <div className={styles.simDrugSub}>Barcode Scanner Live • Dispatch Queue</div>
+                    </div>
+                    <span className={styles.simBadgePurple}>Synced</span>
+                  </div>
+                  <div className={styles.simListItem}>
+                    <div>
+                      <div className={styles.simDrugName}>Branch Store 02 (Bole)</div>
+                      <div className={styles.simDrugSub}>Auto-PO generated: Par level maintained</div>
+                    </div>
+                    <span className={styles.simBadgePurple}>Re-ordered</span>
+                  </div>
+                </div>
+                <div className={styles.previewOverlayStore}>
+                  <div className={styles.overlayTagStore}>Live Multi-Store Inventory</div>
                 </div>
               </div>
             </div>

@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check, Hotel, Sparkles, BedDouble, CalendarCheck, Users, ClipboardList, UtensilsCrossed, Wine, Package, FileText, DollarSign, Shield, BarChart3 } from "lucide-react";
-import styles from "./KasinaHms.module.css";
+import { ArrowRight, Hotel, CalendarCheck, Users, ClipboardList, UtensilsCrossed, Wine, Package, FileText, DollarSign, Shield, BarChart3 } from "lucide-react";
+import styles from "../kasina-hms/KasinaHms.module.css";
 
 export const metadata: Metadata = {
-  title: "Hotel Management System (Kasina HMS) | AmbbaTech",
+  title: "Hotel Management System | AmbbaTech",
   description:
-    "Kasina HMS is AmbbaTech's Hotel Management System—unifying front desk, housekeeping, restaurant POS, inventory, multi-folio billing, and accounting into one platform.",
+    "A unified Hotel Management System connecting front desk, housekeeping, restaurant POS, inventory, multi-folio billing, and automated night audit into one platform.",
 };
 
-export default function KasinaHmsPage() {
+export default function HotelManagementSystemPage() {
   const modules = [
     { title: "Front Desk & Reception", desc: "Rapid 30-second check-in/out, digital ID capture, keycard encoding, and real-time room status.", icon: CalendarCheck },
     { title: "Reservations Engine", desc: "Direct booking channel sync, group room blocks, rate tiering, and automated guest confirmations.", icon: Users },
@@ -20,7 +20,7 @@ export default function KasinaHmsPage() {
     { title: "Purchasing & Procurement", desc: "Vendor RFQs, purchase orders, goods receipt notes (GRN), and price discrepancy alerts.", icon: FileText },
     { title: "Multi-Folio Guest Billing", desc: "Split corporate folios, group master bills, multi-currency settlement, and automated tax compliant invoices.", icon: DollarSign },
     { title: "HR & Shift Attendance", desc: "Hotel staff scheduling, biometric attendance sync, overtime calculation, and department payroll.", icon: Shield },
-    { title: "Executive Audit & Night Audit", desc: "One-click automated night audit, daily manager flash reports, ADR, RevPAR, and occupancy analytics.", icon: BarChart3 },
+    { title: "Executive & Night Audit", desc: "One-click automated night audit, daily manager flash reports, ADR, RevPAR, and occupancy analytics.", icon: BarChart3 },
   ];
 
   const workflowSteps = [
@@ -45,17 +45,17 @@ export default function KasinaHmsPage() {
             </div>
 
             <h1 className={styles.heroTitle}>
-              Hotel operations.<br />
+              Hotel Management System.<br />
               <span className={styles.goldText}>One connected platform.</span>
             </h1>
 
             <p className={styles.heroSubtitle}>
-              Kasina HMS replaces fragmented hotel software with an end-to-end operational engine. From reservation to night audit, give your team total control and your guests a seamless stay.
+              Replaces fragmented hotel tools with an end-to-end operational engine. From reservation and housekeeping to restaurant POS and night audit, give your team total control and your guests a seamless stay.
             </p>
 
             <div className={styles.heroActions}>
-              <Link href="/request-demo?product=kasina" className="btn btn-kasina">
-                Request a Kasina Demo <ArrowRight size={16} />
+              <Link href="/request-demo?product=hotel" className="btn btn-kasina">
+                Request Hotel System Demo <ArrowRight size={16} />
               </Link>
               <Link href="#workflow" className="btn btn-secondary-dark">
                 View Operational Workflow
@@ -74,7 +74,7 @@ export default function KasinaHmsPage() {
                 </div>
                 <div className="browser-address">
                   <span>https://</span>
-                  <span>kasina.ambbatech.com/live/command-center</span>
+                  <span>hotel.ambbatech.com/live/command-center</span>
                 </div>
                 <div className={styles.pmsLiveBadge}>
                   <span className={styles.goldBlink} /> Multi-Department Sync Active
@@ -161,7 +161,7 @@ export default function KasinaHmsPage() {
             <div className="pill-badge pill-badge-kasina">Full Functional Scope</div>
             <h2 className={styles.sectionTitle}>Everything your hotel needs</h2>
             <p className={styles.sectionSubtitle}>
-              Eliminate software sprawl. Kasina HMS incorporates every operational department into one cohesive cloud PMS.
+              Eliminate software sprawl. The Hotel Management System incorporates every operational department into one cohesive cloud PMS.
             </p>
           </div>
 
@@ -182,12 +182,12 @@ export default function KasinaHmsPage() {
         </div>
       </section>
 
-      {/* Workflow Section: Reservation -> Check-in -> Room Stay -> POS -> Folio -> Checkout -> Finance */}
+      {/* Workflow Section */}
       <section className={`section section-light ${styles.workflowSection}`} id="workflow">
         <div className="container">
           <div className={styles.sectionHeader}>
             <div className={styles.workflowTag}>Operational Cohesion</div>
-            <h2 className={styles.workflowTitle}>The Kasina Operational Flow</h2>
+            <h2 className={styles.workflowTitle}>The Hotel Operational Flow</h2>
             <p className={styles.workflowSubtitle}>
               Every action flows into the next without staff re-typing or manual end-of-day reconciliations.
             </p>
@@ -207,10 +207,10 @@ export default function KasinaHmsPage() {
           </div>
 
           <div className={styles.workflowCta}>
-            <h3>Ready to see Kasina HMS running your hotel?</h3>
+            <h3>Ready to see the Hotel Management System running your property?</h3>
             <p>Schedule a customized 30-minute demonstration mapped to your room count and outlets.</p>
-            <Link href="/request-demo?product=kasina" className="btn btn-kasina">
-              Schedule Kasina Walkthrough <ArrowRight size={16} />
+            <Link href="/request-demo?product=hotel" className="btn btn-kasina">
+              Schedule Hotel System Walkthrough <ArrowRight size={16} />
             </Link>
           </div>
         </div>

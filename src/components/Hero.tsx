@@ -27,7 +27,7 @@ export default function Hero() {
             </h1>
 
             <p className={styles.subheadline}>
-              Rooted in the Amba (elevated plateau)—we engineer rock-solid, commanding software systems that help businesses manage operations, connect teams, and scale with confidence.
+              Rooted in the Amba (elevated plateau)—we engineer rock-solid, commanding software systems across hotels, clubs &amp; restaurants, pharmaceuticals, and store operations.
             </p>
 
             <div className={styles.ctaGroup}>
@@ -86,8 +86,8 @@ export default function Hero() {
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2.5">
                       <path d="M12 2L15 8L21 9L17 14L18 20L12 17L6 20L7 14L3 9L9 8L12 2Z" />
                     </svg>
-                    <span>KASINA</span>
-                    <span className={styles.headerSubtitle}>HOTEL MANAGEMENT SYSTEM</span>
+                    <span>HOTEL</span>
+                    <span className={styles.headerSubtitle}>MANAGEMENT SYSTEM</span>
                   </div>
                   <div className={styles.windowDots}>
                     <span className={styles.dot} />
@@ -125,7 +125,7 @@ export default function Hero() {
                       />
                       <div className={styles.bannerOverlay}>
                         <div className={styles.bannerWelcome}>Welcome Back</div>
-                        <div className={styles.bannerProperty}>Kasina Hotel</div>
+                        <div className={styles.bannerProperty}>Hotel Management System</div>
                       </div>
                     </div>
 
@@ -159,13 +159,13 @@ export default function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <div className={styles.badgeTitle}>Kasina HMS</div>
+                  <div className={styles.badgeTitle}>Hotel PMS</div>
                   <div className={styles.badgeSub}>Hotel Management System</div>
                 </div>
               </div>
             </div>
 
-            {/* Card 2: THE OAK CLUB (Angled, Right-Offset) */}
+            {/* Card 2: CLUB & RESTAURANT SYSTEM (Angled, Right-Offset) */}
             <div className={`${styles.angledCard} ${styles.oakAngledCard}`}>
               <div className={styles.mockupWindowOak}>
                 {/* Window Top Bar */}
@@ -174,8 +174,8 @@ export default function Hero() {
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth="2.5">
                       <path d="M12 3a7 7 0 0 0-7 7c0 4 7 11 7 11s7-7 7-11a7 7 0 0 0-7-7z" />
                     </svg>
-                    <span>THE OAK CLUB</span>
-                    <span className={styles.headerSubtitle}>CLUB MANAGEMENT SYSTEM</span>
+                    <span>CLUB &amp; RESTAURANT</span>
+                    <span className={styles.headerSubtitle}>MANAGEMENT SYSTEM</span>
                   </div>
                   <div className={styles.windowDots}>
                     <span className={styles.dot} />
@@ -213,7 +213,7 @@ export default function Hero() {
                       />
                       <div className={styles.bannerOverlay}>
                         <div className={styles.bannerWelcome}>Welcome Back</div>
-                        <div className={styles.bannerProperty}>The Oak Club</div>
+                        <div className={styles.bannerProperty}>Club &amp; Restaurant Platform</div>
                       </div>
                     </div>
 
@@ -259,8 +259,8 @@ export default function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <div className={styles.badgeTitle}>THE OAK CLUB</div>
-                  <div className={styles.badgeSub}>Club Management System</div>
+                  <div className={styles.badgeTitle}>Club &amp; Restaurant</div>
+                  <div className={styles.badgeSub}>Venue Management System</div>
                 </div>
               </div>
             </div>

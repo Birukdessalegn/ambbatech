@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import AmbbaLogo from "@/components/AmbbaLogo";
 import styles from "./WelcomeIntro.module.css";
 
 export default function WelcomeIntro() {
@@ -157,25 +158,7 @@ export default function WelcomeIntro() {
 
               {/* Elevated AmbbaTech Monogram sitting atop the plateau */}
               <div className={styles.logoBadgeOnPlateau}>
-                <svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={styles.logoSvg}
-                >
-                  <rect width="32" height="32" rx="8" fill="#151F38" />
-                  <path
-                    d="M16 6L7 24H12.5L16 16.5L19.5 24H25L16 6Z"
-                    fill="#4F7CFF"
-                  />
-                  <path
-                    d="M12 18H20L18.5 21H13.5L12 18Z"
-                    fill="#27D3FF"
-                    opacity="0.85"
-                  />
-                </svg>
+                <AmbbaLogo size={46} className={styles.logoSvg} />
               </div>
             </div>
 

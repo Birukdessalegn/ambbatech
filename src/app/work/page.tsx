@@ -6,7 +6,7 @@ import FinalCta from "@/components/FinalCta";
 
 export const metadata: Metadata = {
   title: "Selected Work & Case Studies | AmbbaTech",
-  description: "Explore AmbbaTech software deployments, including Kasina HMS hotel platform and THE OAK CLUB venue system.",
+  description: "Explore AmbbaTech software deployments, including Hotel Management System, Club & Restaurant System, and enterprise operations engines.",
 };
 
 export default function WorkPage() {

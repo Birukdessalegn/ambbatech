@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Wine, Users, Utensils, UtensilsCrossed, Package, FileText, DollarSign, Shield, BarChart3, Clock, CheckCircle } from "lucide-react";
-import styles from "./TheOakClub.module.css";
+import { ArrowRight, Wine, Users, UtensilsCrossed, Package, FileText, DollarSign, Shield, BarChart3, Clock } from "lucide-react";
+import styles from "../the-oak-club/TheOakClub.module.css";
 
 export const metadata: Metadata = {
-  title: "Club & Restaurant Management System (THE OAK CLUB) | AmbbaTech",
+  title: "Club & Restaurant Management System | AmbbaTech",
   description:
-    "THE OAK CLUB is AmbbaTech's Club & Restaurant Management System—unifying table POS, kitchen order routing, beverage stock control, and cashier shift settlement.",
+    "Run your club, lounge, restaurant, and bar from one place. Unify table floor maps, waiter POS, kitchen order routing (KOT), beverage stock control, and cashier shift settlement.",
 };
 
-export default function TheOakClubPage() {
+export default function ClubRestaurantManagementSystemPage() {
   const modules = [
-    { title: "Floor & Table Management", desc: "Interactive bird's eye floor plan with live table occupancy, reservation tags, and VIP seating status.", icon: Users },
-    { title: "High-Speed Mobile POS", desc: "Fast handheld order taking for waiters with automated modifier prompts (temperatures, mixers, dietary notes).", icon: UtensilsCrossed },
+    { title: "Floor & Table Management", desc: "Interactive bird's-eye floor plan with live table occupancy, reservation tags, and VIP seating status.", icon: Users },
+    { title: "High-Speed Mobile POS", desc: "Fast handheld order taking for servers with automated modifier prompts (temperatures, mixers, dietary notes).", icon: UtensilsCrossed },
     { title: "Kitchen Display & KOT", desc: "Color-coded order preparation stages with countdown timers and course-by-course firing controls.", icon: Clock },
     { title: "High-Volume Bar Station", desc: "Fast-tap cocktails, bottle service tracking, running patron tabs, and quick split-bill settlements.", icon: Wine },
     { title: "Real-Time Stock Depletion", desc: "Pours and ingredient portions automatically deduct from warehouse stock with zero manual end-of-night counting.", icon: Package },
@@ -39,20 +39,20 @@ export default function TheOakClubPage() {
         <div className="container">
           <div className={styles.heroContent}>
             <div className="pill-badge pill-badge-oak">
-              <Wine size={14} /> Club & F&B Operating System
+              <Wine size={14} /> Club & Dining Operating System
             </div>
 
             <h1 className={styles.heroTitle}>
-              Run your club, restaurant<br />
-              <span className={styles.emeraldText}>and bar from one place.</span>
+              Club &amp; Restaurant<br />
+              <span className={styles.emeraldText}>Management System.</span>
             </h1>
 
             <p className={styles.heroSubtitle}>
-              Built for high-volume nightlife, fine dining, and busy social clubs. THE OAK CLUB coordinates table service, high-speed bar taps, kitchen routing, and automated stock tracking into a single responsive system.
+              Built for high-volume nightlife, fine dining, and bustling social clubs. Coordinates table service, high-speed bar taps, kitchen routing, and automated stock tracking into a single responsive system.
             </p>
 
             <div className={styles.heroActions}>
-              <Link href="/request-demo?product=oak" className="btn btn-oak">
+              <Link href="/request-demo?product=club" className="btn btn-oak">
                 Schedule Venue Demo <ArrowRight size={16} />
               </Link>
               <Link href="#workflow" className="btn btn-secondary-dark">
@@ -72,7 +72,7 @@ export default function TheOakClubPage() {
                 </div>
                 <div className="browser-address">
                   <span>https://</span>
-                  <span>oakclub.ambbatech.com/live/floor-plan</span>
+                  <span>venues.ambbatech.com/live/floor-plan</span>
                 </div>
                 <div className={styles.oakLiveBadge}>
                   <span className={styles.emeraldBlink} /> POS Stream Active • 38 Tables
@@ -170,7 +170,7 @@ export default function TheOakClubPage() {
             <div className="pill-badge pill-badge-oak">Operational Features</div>
             <h2 className={styles.sectionTitle}>Engineered for pace and profit</h2>
             <p className={styles.sectionSubtitle}>
-              Every bottleneck in a restaurant or club costs you margin. THE OAK CLUB accelerates table turns, stops beverage shrinkage, and closes shifts accurately.
+              Every bottleneck in a restaurant or club costs you margin. The Club &amp; Restaurant Management System accelerates table turns, stops beverage shrinkage, and closes shifts accurately.
             </p>
           </div>
 
@@ -196,7 +196,7 @@ export default function TheOakClubPage() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <div className={styles.workflowTag}>Synchronized Venue Operations</div>
-            <h2 className={styles.workflowTitle}>The Oak Club Flow</h2>
+            <h2 className={styles.workflowTitle}>The Venue Operational Flow</h2>
             <p className={styles.workflowSubtitle}>
               TABLE ➔ ORDER ➔ KITCHEN / BAR ➔ PAYMENT ➔ STOCK ➔ FINANCE
             </p>
@@ -218,7 +218,7 @@ export default function TheOakClubPage() {
           <div className={styles.workflowCta}>
             <h3>Ready to modernize your club, lounge, or restaurant?</h3>
             <p>Schedule a live demo to see how fast orders route and how accurately stock reconciles.</p>
-            <Link href="/request-demo?product=oak" className="btn btn-oak">
+            <Link href="/request-demo?product=club" className="btn btn-oak">
               Schedule Venue Demo <ArrowRight size={16} />
             </Link>
           </div>

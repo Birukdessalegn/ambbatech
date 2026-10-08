@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
+import AmbbaLogo from "@/components/AmbbaLogo";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -11,11 +12,7 @@ export default function Footer() {
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logoLink}>
               <div className={styles.logoMark}>
-                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="32" height="32" rx="8" fill="#151F38" />
-                  <path d="M16 6L7 24H12.5L16 16.5L19.5 24H25L16 6Z" fill="#4F7CFF" />
-                  <path d="M12 18H20L18.5 21H13.5L12 18Z" fill="#27D3FF" opacity="0.85" />
-                </svg>
+                <AmbbaLogo size={32} />
               </div>
               <span className={styles.logoText}>
                 AMBBA<span className={styles.logoAccent}>TECH</span>
@@ -37,15 +34,23 @@ export default function Footer() {
             <h4 className={styles.colTitle}>Products</h4>
             <ul className={styles.linkList}>
               <li>
-                <Link href="/products/kasina-hms" className={styles.footerLink}>
-                  <span>Kasina HMS</span>
-                  <span className={styles.miniBadgeKasina}>Hotel</span>
+                <Link href="/products/hotel-management-system" className={styles.footerLink}>
+                  <span>Hotel Management System</span>
                 </Link>
               </li>
               <li>
-                <Link href="/products/the-oak-club" className={styles.footerLink}>
-                  <span>THE OAK CLUB</span>
-                  <span className={styles.miniBadgeOak}>Club & Bar</span>
+                <Link href="/products/club-restaurant-management-system" className={styles.footerLink}>
+                  <span>Club & Restaurant System</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/pharmaceutical-management-system" className={styles.footerLink}>
+                  <span>Pharmaceutical System</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/store-management-system" className={styles.footerLink}>
+                  <span>Store Management System</span>
                 </Link>
               </li>
               <li>
