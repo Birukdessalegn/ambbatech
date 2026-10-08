@@ -1,0 +1,115 @@
+/* [project]/src/components/HowWeWork.module.css [app-client] (css) */
+.HowWeWork-module__yZFjlG__processSection {
+  background-color: #070b16;
+  padding: 80px 0 100px;
+  position: relative;
+}
+
+.HowWeWork-module__yZFjlG__sectionHeader {
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+.HowWeWork-module__yZFjlG__title {
+  letter-spacing: -.03em;
+  color: #fff;
+  margin-bottom: 14px;
+  font-size: clamp(32px, 3.6vw, 46px);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.HowWeWork-module__yZFjlG__subtitle {
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.HowWeWork-module__yZFjlG__processTrackWrapper {
+  width: 100%;
+  padding-top: 10px;
+  position: relative;
+}
+
+.HowWeWork-module__yZFjlG__trackLine {
+  z-index: 0;
+  background: linear-gradient(90deg, #27d3ff1a 0%, #27d3ff59 50%, #27d3ff1a 100%);
+  height: 1px;
+  position: absolute;
+  top: 35px;
+  left: 5%;
+  right: 5%;
+}
+
+.HowWeWork-module__yZFjlG__stepsGrid {
+  z-index: 1;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  display: grid;
+  position: relative;
+}
+
+.HowWeWork-module__yZFjlG__stepItem {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  display: flex;
+}
+
+.HowWeWork-module__yZFjlG__iconCircle {
+  width: 50px;
+  height: 50px;
+  transition: all var(--transition-base);
+  background: #0d1629;
+  border: 1px solid #27d3ff4d;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 0 20px #27d3ff1f;
+}
+
+.HowWeWork-module__yZFjlG__stepItem:hover .HowWeWork-module__yZFjlG__iconCircle {
+  background: #11203d;
+  border-color: #27d3ff;
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px #27d3ff59;
+}
+
+.HowWeWork-module__yZFjlG__stepIcon {
+  color: #27d3ff;
+}
+
+.HowWeWork-module__yZFjlG__stepTitle {
+  letter-spacing: -.01em;
+  color: #fff;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.HowWeWork-module__yZFjlG__stepDescription {
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .HowWeWork-module__yZFjlG__trackLine {
+    display: none;
+  }
+
+  .HowWeWork-module__yZFjlG__stepsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 580px) {
+  .HowWeWork-module__yZFjlG__stepsGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+/*# sourceMappingURL=src_components_HowWeWork_module_css_1igg3k2._.single.css.map*/

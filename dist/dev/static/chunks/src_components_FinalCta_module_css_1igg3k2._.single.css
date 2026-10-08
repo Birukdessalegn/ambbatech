@@ -1,0 +1,119 @@
+/* [project]/src/components/FinalCta.module.css [app-client] (css) */
+.FinalCta-module__LA3S-W__ctaSection {
+  background-color: #070b16;
+  padding: 50px 0 90px;
+  position: relative;
+}
+
+.FinalCta-module__LA3S-W__ctaBanner {
+  background: linear-gradient(135deg, #0d1730 0%, #0f224d 50%, #091328 100%);
+  border: 1px solid #4f7cff47;
+  border-radius: 18px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 36px 44px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 45px -10px #0009, 0 0 40px #4f7cff26;
+}
+
+.FinalCta-module__LA3S-W__bannerGlow {
+  pointer-events: none;
+  filter: blur(30px);
+  background: radial-gradient(circle, #4f7cff40 0%, #0000 70%);
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: -50%;
+  right: 15%;
+}
+
+.FinalCta-module__LA3S-W__bannerLeft {
+  z-index: 1;
+  max-width: 420px;
+  position: relative;
+}
+
+.FinalCta-module__LA3S-W__headline {
+  color: #fff;
+  letter-spacing: -.02em;
+  margin-bottom: 6px;
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.FinalCta-module__LA3S-W__subline {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.FinalCta-module__LA3S-W__bannerAction {
+  z-index: 1;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.FinalCta-module__LA3S-W__trustBadges {
+  z-index: 1;
+  border-left: 1px solid #ffffff1a;
+  align-items: center;
+  gap: 24px;
+  padding-left: 20px;
+  display: flex;
+  position: relative;
+}
+
+.FinalCta-module__LA3S-W__trustItem {
+  color: #cbd5e1;
+  white-space: nowrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+}
+
+.FinalCta-module__LA3S-W__checkIcon {
+  color: #27d3ff;
+}
+
+.FinalCta-module__LA3S-W__zapIcon {
+  color: #f59e0b;
+}
+
+.FinalCta-module__LA3S-W__supportIcon {
+  color: #10b981;
+}
+
+@media (max-width: 1100px) {
+  .FinalCta-module__LA3S-W__ctaBanner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 32px 28px;
+  }
+
+  .FinalCta-module__LA3S-W__trustBadges {
+    border-top: 1px solid #ffffff1a;
+    border-left: none;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    padding-top: 18px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .FinalCta-module__LA3S-W__trustBadges {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/*# sourceMappingURL=src_components_FinalCta_module_css_1igg3k2._.single.css.map*/

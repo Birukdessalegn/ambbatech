@@ -19,6 +19,9 @@
 
 # production
 /build
+# dist is explicitly tracked for cPanel deployment
+!/dist
+!/dist/**
 
 # misc
 .DS_Store

@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    # 1. Target path: $HOME automatically resolves to /home/<your-cpanel-username>/
+    - export DEPLOYPATH=$HOME/public_html/
+    
+    # 2. Ensure target directory exists
+    - /bin/mkdir -p $DEPLOYPATH
+
+    # 3. Deploy build output (checks dist first, then out, then root)
+    - if [ -d "dist" ]; then /bin/cp -R dist/* $DEPLOYPATH; elif [ -d "out" ]; then /bin/cp -R out/* $DEPLOYPATH; else /bin/cp -R * $DEPLOYPATH; fi

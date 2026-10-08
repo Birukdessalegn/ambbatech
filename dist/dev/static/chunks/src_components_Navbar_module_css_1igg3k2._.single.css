@@ -1,0 +1,382 @@
+/* [project]/src/components/Navbar.module.css [app-client] (css) */
+.Navbar-module__cJzEcG__header {
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(16px);
+  transition: all var(--transition-base);
+  background: #0b1020bf;
+  border-bottom: 1px solid #ffffff12;
+  align-items: center;
+  height: 76px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.Navbar-module__cJzEcG__headerScrolled {
+  background: #0b1020eb;
+  border-bottom-color: #ffffff1f;
+  height: 68px;
+  box-shadow: 0 10px 30px #0006;
+}
+
+.Navbar-module__cJzEcG__navContainer {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__logoLink {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__logoMark {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__logoText {
+  font-family: var(--font-family-heading);
+  letter-spacing: .05em;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.Navbar-module__cJzEcG__logoAccent {
+  color: var(--color-electric-blue);
+}
+
+.Navbar-module__cJzEcG__desktopNav {
+  align-items: center;
+  gap: 32px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__navLink {
+  color: var(--text-dark-secondary);
+  transition: color var(--transition-fast);
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__navLink:hover, .Navbar-module__cJzEcG__navLinkActive {
+  color: #fff;
+}
+
+.Navbar-module__cJzEcG__dropdownChevron {
+  transition: transform var(--transition-fast);
+}
+
+.Navbar-module__cJzEcG__rotate {
+  transform: rotate(180deg);
+}
+
+.Navbar-module__cJzEcG__dropdownContainer {
+  position: relative;
+}
+
+.Navbar-module__cJzEcG__dropdownMenu {
+  background: var(--color-navy-card);
+  border-radius: var(--radius-md);
+  width: 340px;
+  box-shadow: var(--shadow-card-dark);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid #ffffff1f;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 12px;
+  animation: .2s ease-out Navbar-module__cJzEcG__fadeIn;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.Navbar-module__cJzEcG__solutionsDropdown {
+  width: 480px;
+}
+
+.Navbar-module__cJzEcG__dropdownGrid {
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  display: grid;
+}
+
+@keyframes Navbar-module__cJzEcG__fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Navbar-module__cJzEcG__dropdownItem {
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast);
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__dropdownItem:hover {
+  background: #ffffff0d;
+}
+
+.Navbar-module__cJzEcG__dropdownItemSmall {
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast);
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__dropdownItemSmall:hover {
+  background: #ffffff0d;
+}
+
+.Navbar-module__cJzEcG__itemIcon {
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__iconKasina {
+  background: var(--color-kasina-soft);
+  color: var(--color-kasina-gold);
+  border: 1px solid #f59e0b40;
+}
+
+.Navbar-module__cJzEcG__iconOak {
+  background: var(--color-oak-soft);
+  color: var(--color-oak-emerald);
+  border: 1px solid #10b98140;
+}
+
+.Navbar-module__cJzEcG__iconPharma {
+  color: #06b6d4;
+  background: #06b6d41f;
+  border: 1px solid #06b6d447;
+}
+
+.Navbar-module__cJzEcG__iconStore {
+  color: #a78bfa;
+  background: #8b5cf61f;
+  border: 1px solid #8b5cf647;
+}
+
+.Navbar-module__cJzEcG__productsDropdownWide {
+  width: 580px;
+}
+
+.Navbar-module__cJzEcG__productsDropdownGrid {
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  display: grid;
+}
+
+.Navbar-module__cJzEcG__smallIconWrap {
+  border-radius: var(--radius-sm);
+  background: var(--color-blue-soft);
+  width: 30px;
+  height: 30px;
+  color: var(--color-bright-blue);
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__itemContent {
+  flex: 1;
+}
+
+.Navbar-module__cJzEcG__itemTitleRow {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__itemTitle {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Navbar-module__cJzEcG__smallItemTitle {
+  color: #fff;
+  margin-bottom: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+}
+
+.Navbar-module__cJzEcG__itemDesc {
+  color: var(--text-dark-secondary);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.Navbar-module__cJzEcG__smallItemDesc {
+  color: var(--text-dark-muted);
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.Navbar-module__cJzEcG__kasinaBadge {
+  border-radius: var(--radius-full);
+  background: var(--color-kasina-soft);
+  color: var(--color-kasina-gold);
+  text-transform: uppercase;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.Navbar-module__cJzEcG__oakBadge {
+  border-radius: var(--radius-full);
+  background: var(--color-oak-soft);
+  color: var(--color-oak-emerald);
+  text-transform: uppercase;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.Navbar-module__cJzEcG__pharmaBadge {
+  border-radius: var(--radius-full);
+  color: #06b6d4;
+  text-transform: uppercase;
+  background: #06b6d41f;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.Navbar-module__cJzEcG__storeBadge {
+  border-radius: var(--radius-full);
+  color: #a78bfa;
+  text-transform: uppercase;
+  background: #8b5cf61f;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.Navbar-module__cJzEcG__actionContainer {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__mobileToggleBtn {
+  color: #fff;
+  padding: 6px;
+  display: none;
+}
+
+.Navbar-module__cJzEcG__mobileDrawer {
+  background: var(--color-midnight);
+  z-index: 999;
+  border-top: 1px solid #ffffff1a;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  display: flex;
+  position: fixed;
+  inset: 76px 0 0;
+  overflow-y: auto;
+}
+
+.Navbar-module__cJzEcG__mobileNavSection {
+  border-bottom: 1px solid #ffffff14;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__mobileSectionHeader {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-dark-muted);
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.Navbar-module__cJzEcG__mobileNavLink {
+  border-radius: var(--radius-sm);
+  color: var(--text-dark-primary);
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__mobileNavLink:hover {
+  background: #ffffff0d;
+}
+
+.Navbar-module__cJzEcG__mobileSubtext {
+  color: var(--text-dark-muted);
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
+
+.Navbar-module__cJzEcG__mobileKasinaIcon {
+  color: var(--color-kasina-gold);
+}
+
+.Navbar-module__cJzEcG__mobileOakIcon {
+  color: var(--color-oak-emerald);
+}
+
+.Navbar-module__cJzEcG__mobilePharmaIcon {
+  color: #06b6d4;
+}
+
+.Navbar-module__cJzEcG__mobileStoreIcon {
+  color: #a78bfa;
+}
+
+.Navbar-module__cJzEcG__mobileCtaWrapper {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+@media (max-width: 960px) {
+  .Navbar-module__cJzEcG__desktopNav {
+    display: none;
+  }
+
+  .Navbar-module__cJzEcG__mobileToggleBtn {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=src_components_Navbar_module_css_1igg3k2._.single.css.map*/
