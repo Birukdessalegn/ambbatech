@@ -1,9 +1,0 @@
-{"timestamp":"00:00:03.351","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:03.355","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
-{"timestamp":"00:00:03.356","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
-{"timestamp":"00:00:03.359","source":"Server","level":"LOG","message":"  \t- include was updated to add 'dist/types/**/*.ts'"}
-{"timestamp":"00:00:03.360","source":"Server","level":"LOG","message":"  \t- include was updated to add 'dist/dev/types/**/*.ts'"}
-{"timestamp":"00:00:03.360","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:04.044","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:07.356","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:00:22.809","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}

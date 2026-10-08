@@ -22,6 +22,9 @@
 # dist is explicitly tracked for cPanel deployment
 !/dist
 !/dist/**
+dist/dev/
+dist/dev/lock
+
 
 # misc
 .DS_Store
